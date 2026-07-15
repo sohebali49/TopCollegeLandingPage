@@ -143,47 +143,52 @@
         </div>
 
         <!-- 3. TWO-COLUMN ASYMMETRIC CONTENT BLOCK LAYOUT GRID -->
-        <!-- LEFT COLUMN AREA (3/4 WIDTH) -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            
+            <!-- LEFT COLUMN AREA (3/4 WIDTH) -->
             <div class="lg:col-span-3 space-y-12">
             
                 <!-- SECTION 1: ARTICLES -->
-                <section>
-                    <div class="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
-                        <div>
-                            <h2 class="text-lg font-bold text-gray-900 tracking-tight">Latest Articles</h2>
-                            <p class="text-xs text-gray-500">Stay updated with deep insights and preparation timelines.</p>
-                        </div>
-                        <a href="#" class="text-xs font-bold text-blue-800 hover:text-blue-950 transition flex items-center gap-1 shrink-0">
-                            View All Articles <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                    
-                    <div id="articles-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <!-- Content injected dynamically -->
-                    </div>
-                </section>
+                <!-- SECTION 1: ARTICLES -->
+<section>
+    <div class="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
+        <div>
+            <h2 class="text-lg font-bold text-gray-900 tracking-tight">Latest Articles</h2>
+            <p class="text-xs text-gray-500">Stay updated with deep insights.</p>
+        </div>
+        <a href="#" class="text-xs font-bold text-blue-800 hover:text-blue-950 transition flex items-center gap-1 shrink-0">
+            View All Articles <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+    </div>
+    
+    <!-- Locked to exactly 5 columns from standard desktop screens up -->
+    <div id="articles-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <!-- Content injected dynamically -->
+    </div>
+</section>
 
-                <!-- SECTION 2: VIDEOS -->
-                <section>
-                    <div class="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
-                        <div>
-                            <h2 class="text-lg font-bold text-gray-900 tracking-tight">Featured Video Tutorials</h2>
-                            <p class="text-xs text-gray-500">Watch full explanations from our expert educators.</p>
-                        </div>
-                        <a href="#" class="text-xs font-bold text-blue-800 hover:text-blue-950 transition flex items-center gap-1 shrink-0">
-                            View All Videos <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                    
-                    <div id="videos-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <!-- Content injected dynamically -->
-                    </div>
-                </section>
+<!-- SECTION 2: VIDEOS -->
+<section>
+    <div class="flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
+        <div>
+            <h2 class="text-lg font-bold text-gray-900 tracking-tight">Featured Video Tutorials</h2>
+            <p class="text-xs text-gray-500">Watch full explanations from our educators.</p>
+        </div>
+        <a href="#" class="text-xs font-bold text-blue-800 hover:text-blue-950 transition flex items-center gap-1 shrink-0">
+            View All Videos <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+    </div>
+    
+    <!-- Locked to exactly 5 columns from standard desktop screens up -->
+    <div id="videos-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <!-- Content injected dynamically -->
+    </div>
+</section>
 
-            </div> <!-- /End Left Column Area --> <!-- /End Left Column Area -->
+            </div> <!-- /End Left Column Area -->
 
             <!-- RIGHT COLUMN SIDEBAR AREA (1/4 WIDTH) -->
-            <div class="space-y-6">
+            <div class="lg:col-span-1 space-y-6">
                 
                 <!-- Widget Box 1: Popular Topics -->
                 <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs">
