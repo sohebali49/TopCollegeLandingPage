@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopCollegeInfo Replica</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- STICKY NAVBAR -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            
+            <!-- Logo Block -->
+            <div class="flex items-center space-x-2">
+                <div class="text-blue-900 font-black text-xl tracking-tight flex items-center">
+                    <i class="fa-solid fa-graduation-cap mr-2 text-2xl text-blue-800"></i> TopCollegeInfo
+                </div>
+            </div>
+
+            <!-- Links (Hidden on mobile phones, flexes on desktop) -->
+            <nav class="hidden md:flex space-x-6 font-medium text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-900 transition flex items-center">Colleges <i class="fa-solid fa-chevron-down text-[10px] ml-1 mt-0.5 text-gray-400"></i></a>
+                <a href="#" class="hover:text-blue-900 transition flex items-center">Exams <i class="fa-solid fa-chevron-down text-[10px] ml-1 mt-0.5 text-gray-400"></i></a>
+                <a href="#" class="hover:text-blue-900 transition flex items-center">Streams <i class="fa-solid fa-chevron-down text-[10px] ml-1 mt-0.5 text-gray-400"></i></a>
+                <a href="#" class="hover:text-blue-900 transition">Articles</a>
+                <a href="#" class="hover:text-blue-900 transition">Videos</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center space-x-4">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 cursor-pointer hover:text-blue-900"></i>
+                <button class="bg-[#0f2963] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-950 transition">
+                    Login / Sign Up
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN WRAPPER FOR THE CONTENT BODY -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+
+        <!-- 1. HERO PROMOTIONAL SECTION -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            
+            <!-- Left Profile Card (2/3 Width) -->
+            <div class="lg:col-span-2 bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-between shadow-xs relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-start gap-5 z-10">
+                    <!-- Brand Logo Box -->
+                    <div class="w-20 h-20 bg-[#100a26] rounded-2xl flex items-center justify-center p-3 shadow-xs flex-shrink-0 border border-gray-100">
+                        <span class="text-white font-black text-xs tracking-tighter text-center leading-none">BYJU'S<br><span class="text-[8px] text-purple-400 tracking-normal font-medium">EXAM PREP</span></span>
+                    </div>
+                    
+                    <!-- Profile Information details -->
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h1 class="text-xl font-black text-gray-900 tracking-tight">BYJU'S Exam Prep</h1>
+                            <span class="bg-blue-50 text-blue-800 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-blue-100 uppercase tracking-wide flex items-center shadow-2xs">
+                                <i class="fa-solid fa-circle-check mr-1 text-[9px] text-blue-600"></i> Premium Partner
+                            </span>
+                        </div>
+                        
+                        <!-- Metadata Row info labels -->
+                        <div class="flex flex-wrap items-center text-xs text-gray-500 font-semibold gap-y-1.5 gap-x-4">
+                            <span class="flex items-center"><i class="fa-regular fa-calendar-check mr-1.5 text-gray-400 text-sm"></i> Founded 2015</span>
+                            <span class="flex items-center"><i class="fa-solid fa-location-dot mr-1.5 text-gray-400 text-sm"></i> Bangalore, India</span>
+                            <a href="https://byjusexamprep.com" target="_blank" class="flex items-center text-gray-600 hover:text-blue-800 transition"><i class="fa-solid fa-globe mr-1.5 text-gray-400 text-sm"></i> byjusexamprep.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Interactive Call Actions row -->
+                <div class="flex items-center justify-end gap-3 mt-6 sm:mt-0 pt-4 border-t border-gray-50 z-10">
+                    <button class="bg-slate-50 hover:bg-slate-100 text-gray-700 font-bold text-xs px-4 py-2.5 rounded-xl border border-gray-200 transition shadow-2xs">
+                        About Institution
+                    </button>
+                    <a href="https://byjusexamprep.com" target="_blank" class="bg-[#0f2963] hover:bg-blue-950 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition shadow-xs flex items-center">
+                        Visit Website <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px] opacity-90"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PREMIUM ADVERTISING & METRICS BANNER WITH STUDENT OVERLAY -->
+            <div class="bg-gradient-to-br from-[#0f2a65] via-[#201d51] to-[#3a1555] rounded-xl p-4 text-white relative overflow-hidden flex flex-col justify-between min-h-[160px] shadow-xs group">
+                <div class="absolute inset-0 bg-radial-gradient from-transparent to-black/20 pointer-events-none"></div>
+
+                <!-- Left Content: High-Conversion Heading & Live Counters -->
+                <div class="w-[58%] z-10 flex flex-col justify-between h-full">
+                    <div>
+                        <h3 class="text-sm font-extrabold tracking-tight leading-snug">
+                            Ace Your Exam.<br>Achieve Your Dream.
+                        </h3>
+                        <p class="text-[9px] text-gray-300 mt-1 leading-tight font-medium">
+                            Expert Faculty, Comprehensive Courses, Personalized Guidance.
+                        </p>
+                    </div>
+
+                    <!-- Three-Column Metric Tracker Strip -->
+                    <div class="grid grid-cols-3 gap-1 pt-3 border-t border-white/10 mt-2">
+                        <div class="text-center sm:text-left">
+                            <div class="text-[11px] font-black text-white tracking-tight">50M+</div>
+                            <div class="text-[8px] text-gray-400 uppercase tracking-wider font-semibold scale-90 origin-left">Students</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-[11px] font-black text-white tracking-tight">250+</div>
+                            <div class="text-[8px] text-gray-400 uppercase tracking-wider font-semibold scale-90 origin-left">Faculty</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-[11px] font-black text-white tracking-tight">1000+</div>
+                            <div class="text-[8px] text-gray-400 uppercase tracking-wider font-semibold scale-90 origin-left">Hours</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content: Absolute Positioned Student & Circular Media Trigger -->
+                <div class="absolute bottom-0 right-0 h-[92%] w-[42%] flex items-end justify-end overflow-hidden pointer-events-none">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=300&q=80" 
+                         alt="Student Studying on Laptop" 
+                         class="h-full w-full object-cover object-center mix-blend-lighten opacity-85 transition-transform duration-500 group-hover:scale-105 origin-bottom">
+                    
+                    <div class="absolute inset-0 flex items-center justify-center pr-4 pb-2">
+                        <div class="w-7 h-7 bg-white text-[#201d51] rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110 pointer-events-auto cursor-pointer animate-pulse">
+                            <i class="fa-solid fa-play text-[9px] ml-0.5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SUB-MENU ANCHOR NAVIGATION TAB STRIP -->
+        <div class="border-b border-gray-200 mb-8 overflow-x-auto whitespace-nowrap flex space-x-8 text-sm font-medium text-gray-500 scrollbar-hide">
+            <a href="#overview" class="pb-3 hover:text-blue-900 border-b-2 border-transparent transition">Overview</a>
+            <a href="#courses" class="pb-3 hover:text-blue-900 border-b-2 border-transparent transition">Courses & Exams</a>
+            <a href="#features" class="pb-3 hover:text-blue-900 border-b-2 border-transparent transition">Top Features</a>
+            <a href="#articles" class="pb-3 text-blue-950 border-b-2 border-blue-950 font-bold">Articles & Resources</a>
+            <a href="#videos" class="pb-3 hover:text-blue-900 border-b-2 border-transparent transition">Videos</a>
+            <a href="#contact" class="pb-3 hover:text-blue-900 border-b-2 border-transparent transition">Contact</a>
+        </div>
+
+        <!-- 3. TWO-COLUMN ASYMMETRIC CONTENT BLOCK LAYOUT GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            
+            <!-- LEFT COLUMN AREA (3/4 WIDTH) -->
+            <div class="lg:col-span-3 space-y-12">
+            
+                <!-- SECTION 1: ARTICLES -->
+                <section>
+                    <div class="mb-4">
+                        <h2 class="text-lg font-bold text-gray-900 tracking-tight">Latest Articles</h2>
+                        <p class="text-xs text-gray-500">Stay updated with deep insights and preparation timelines.</p>
+                    </div>
+                    
+                    <div id="articles-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- Content injected dynamically -->
+                    </div>
+                </section>
+
+                <!-- SECTION 2: VIDEOS -->
+                <section>
+                    <div class="mb-4">
+                        <h2 class="text-lg font-bold text-gray-900 tracking-tight">Featured Video Tutorials</h2>
+                        <p class="text-xs text-gray-500">Watch full explanations from our expert educators.</p>
+                    </div>
+                    
+                    <div id="videos-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- Content injected dynamically -->
+                    </div>
+                </section>
+
+            </div> <!-- /End Left Column Area -->
+
+            <!-- RIGHT COLUMN SIDEBAR AREA (1/4 WIDTH) -->
+            <div class="space-y-6">
+                
+                <!-- Widget Box 1: Popular Topics -->
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs">
+                    <h3 class="font-bold text-sm text-gray-900 mb-3.5 tracking-tight border-b border-gray-50 pb-2">Popular Topics</h3>
+                    <ul class="space-y-3 text-xs font-semibold text-gray-600">
+                        <li><a href="#" class="hover:text-blue-900 block group transition"><i class="fa-regular fa-file-lines mr-2.5 text-gray-400 group-hover:text-blue-800 transition w-4"></i> Exam Preparation Tips</a></li>
+                        <li><a href="#" class="hover:text-blue-900 block group transition"><i class="fa-solid fa-building-columns mr-2.5 text-gray-400 group-hover:text-blue-800 transition w-4"></i> College Admissions Guide</a></li>
+                        <li><a href="#" class="hover:text-blue-900 block group transition"><i class="fa-solid fa-chart-line mr-2.5 text-gray-400 group-hover:text-blue-800 transition w-4"></i> Cut-Offs & Merit Rankings</a></li>
+                    </ul>
+                    <a href="#" class="inline-block text-[11px] font-bold text-blue-800 mt-4 hover:underline">Explore All Topics &rarr;</a>
+                </div>
+
+                <!-- Widget Box 2: Newsletter Submission Form -->
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 shadow-xs">
+                    <h3 class="font-bold text-sm text-gray-900 tracking-tight">Stay Ahead. Stay Informed.</h3>
+                    <p class="text-[11px] text-gray-500 mt-1 mb-4 leading-relaxed">Get top critical updates and curated resources sent directly to your screen.</p>
+                    <div class="space-y-2">
+                        <input type="email" placeholder="Enter email address" class="w-full bg-slate-50 border border-gray-200 rounded-lg px-3 py-2.5 text-xs focus:outline-hidden focus:ring-1 focus:ring-blue-800 focus:bg-white transition">
+                        <button class="w-full bg-[#0f2963] text-white text-xs font-bold py-2.5 rounded-lg hover:bg-blue-950 transition shadow-xs">Subscribe</button>
+                    </div>
+                    <p class="text-[10px] text-gray-400 text-center mt-2.5">No tracking spam. Opt-out anytime.</p>
+                </div>
+
+                <!-- Widget Box 3: Live Counselor Advisor -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-2xl border border-blue-100 flex items-center justify-between shadow-xs">
+                    <div class="space-y-1">
+                        <h4 class="font-bold text-xs text-blue-950 tracking-tight">Have a Doubt?</h4>
+                        <p class="text-[10px] text-gray-600 leading-normal max-w-[150px]">Speak with our educational advisors now.</p>
+                        <a href="#" class="inline-block text-[10px] font-bold text-blue-800 hover:underline pt-1">Talk to an Expert &rarr;</a>
+                    </div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden bg-white border-2 border-blue-300 shadow-xs flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Counselor Profile Photo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div> <!-- /End Sidebar Area -->
+
+        </div> <!-- /End Two-Column Asymmetric Grid -->
+
+    </main>
+
+    <!-- THEATER MODE LIGHTBOX MODAL (Outside the main grid layout context) -->
+    <div id="video-modal" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="relative w-full max-w-4xl mx-4 aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
+            <button id="close-modal" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-sm font-medium flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-lg backdrop-blur-xs transition">
+                <i class="fa-solid fa-xmark"></i> Close Theater Mode
+            </button>
+            <iframe id="modal-iframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Link your modular script file -->
+    <script src="web.js"></script>
+</body>
+</html>
